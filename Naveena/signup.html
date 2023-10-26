@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Signup.css">
+    </head>
+    <script type="text/javascript">
+        function loadDoc(){
+            var email=document.forms["Form"]["mail"].value;
+            var pass=document.forms["Form"]["password"].value;
+            if(pass.length==" " || email.length==" " ){
+            alert("Enter valid mailid or password");}
+            else{
+            window.location.assign("one.html");}
+        }
+    </script>
+    <div class="container">
+        <div class="form">
+            
+        <form name="Form">
+            <div class="for1">
+            
+              <p><a href="#" class="fa fa-envelope"></a> <input type="text" placeholder="Enter your valid mail" name="mail" id="one" required></p>
+             <pre><a href="#" class="fa fa-lock"></a> <input type="password" placeholder="Enter your password" name="password" id="two"required></pre>
+             <p><a href="#"  class="fa fa-mobile"></a>&nbsp;
+            <input type="tel" placeholder="+919999999999"  required></p>
+            <button type="button" class="but" onclick="loadDoc()">submit</button>      
+        </div></div>
+            </div>
+            </form>
+       
+    </div>
+            </body>
+        </html>
